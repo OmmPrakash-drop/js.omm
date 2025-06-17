@@ -43,16 +43,43 @@ const users =[
         id: 1,
         email: "omm@gmail.com"
     },
-    {
-        id: 1,
-        email: "omm@gmail.com"
-    },
 ]
 users[1].email
-console.log(tinderuser);
+// console.log(tinderuser);
 
-console.log(Object.keys(tinderuser));
-console.log(Object.values(tinderuser));
-console.log(Object.entries(tinderuser));
+// console.log(Object.keys(tinderuser));
+// console.log(Object.values(tinderuser));
+// console.log(Object.entries(tinderuser));
 
-console.log(tinderuser.hasOwnProperty('isLogedin'));
+// console.log(tinderuser.hasOwnProperty('isLogedin'));
+
+
+// destructure.........................
+const course = {
+    courcename: "js in hindi",
+    price: "999",
+    courseInstructor: "Hitesh",
+    instructor: "me"
+}
+
+// console.log(course.courseInstructor);
+
+const {courseInstructor: instructor} = course 
+
+console.log(instructor);
+console.log(course.instructor);
+
+// api's
+
+// in jayson all the values are called from a key
+{
+    "name": "omm",
+    "coursename": "js in hindi",
+    "price": "free"
+}
+
+[
+    {},
+    {},
+    {}
+]
